@@ -1,3 +1,21 @@
 <h1>Apartments</h1>
 
-<!-- TODO: fill this part in -->
+<!-- TODO: fill in this part -->
+<table border="1" class=table>
+  <tr>
+    <th>address</th>
+    <th>rent_per_month</th>
+    <th>num_bedrooms</th>
+    <th>does_allow_pets</th>
+    <th>url</th>
+  </tr>
+  <% Apartment.order(:id).each do |apartment| %>
+    <tr>
+      <td><%= apartment.address %></td>
+      <td><%= apartment.rent_per_month %></td>
+      <td><%= apartment.num_bedrooms %></td>
+      <td><%= apartment.does_allow_pets %></td>
+      <td><%= apartment.url %><td>
+    </tr>
+  <% end %>
+</table>
