@@ -1,6 +1,6 @@
 <h1>UFO sightings</h1>
 
- <% Sighting.order(:incident).each do |sighting| %>
+ <%Sighting.order(:incident).each do |sighting|%>
   <h2><%=sighting.incident%></h2>
   <p><%=sighting.description%></p>
  <%end%>

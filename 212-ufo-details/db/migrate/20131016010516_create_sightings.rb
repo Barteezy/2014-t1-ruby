@@ -1,4 +1,4 @@
-class CreateUfoSightings < ActiveRecord::Migration
+class CreateSightings < ActiveRecord::Migration
   def change
     create_table :ufo_sightings do |t|
       t.string  :location

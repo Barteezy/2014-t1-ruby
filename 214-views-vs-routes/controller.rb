@@ -9,7 +9,7 @@ get "/1" do
 end
 
 get "/2" do
-  halt erb(:a)
+  halt erb(:b)
 end
 
 get "/3" do
@@ -17,5 +17,5 @@ get "/3" do
 end
 
 get "/4" do
-  halt erb(:b)
+  halt erb(:a)
 end

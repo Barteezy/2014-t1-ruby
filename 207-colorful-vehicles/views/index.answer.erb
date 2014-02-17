@@ -1,22 +1,14 @@
 <table>
   <tr>
     <th></th>
-    
-      <th> fuschia </th>
-      <th> purple </th>
-      <th> green </th>
-      <th> yellow </th>
-  
+    <% Color.order(:name).each do |color| %>
+      <th><%= color.name %></th>
+    <% end %>
   </tr>
- 
+  <% Vehicle.order(:name).each do |vehicle| %>
     <tr>
-      <th>bicycle</th>
-      <th>plane</th>
-      <th>bus</th>
-      <th>car</th>
-      
-      </tr>
- <% Vehicle.order(:name).each do |vehicle| %>
+      <th><%= vehicle.name %></th>
+
       <% Color.order(:name).each do |color| %>
 
         <td>
@@ -30,4 +22,3 @@
     </tr>
   <% end %>
 </table>
-     

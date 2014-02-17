@@ -3,3 +3,17 @@
 .DS_Store
 q3
 solutions
+111-refactor-layout/public/stylesheets/bootstrap.css
+108-css-practice/public/stylesheets/mystyles.css
+111-refactor-layout/views/_layout.html.erb
+203-cycling-dictionary/db/migrate/20140210191832_create_definitions.rb
+203-cycling-dictionary/models/definition.rb
+206-athletes-x-races/db/migrate/20140211221014_create_athletes.rb
+206-athletes-x-races/db/migrate/20140211233331_create_races.rb
+206-athletes-x-races/models/athlete.rb
+206-athletes-x-races/models/race.rb
+207-colorful-vehicles/db/migrate/20140211215735_initial_schema.rb
+207-colorful-vehicles/models/color.rb
+207-colorful-vehicles/models/vehicle.rb
+208-ufo-sightings/db/migrate/20140212164238_create_sightings.rb
+208-ufo-sightings/models/sighting.rb
