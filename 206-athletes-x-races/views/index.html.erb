@@ -1,25 +1,19 @@
-<h1>Track &amp; Field race times</h1>
+<h1> Track and Field Race Times </h1>
 
 <table border="1">
-
   <tr>
-    <th></th>
-    <% Race.order(:name).each do |race| %>
-      <th><%= race.name %></th>
-    <% end %>
+    <td></td>
+    <td>100-meter dash</td>
+    <td>10k run</td>
+    <td>400-meter dash</td>
   </tr>
-
-  <% Athlete.order(:name).each do |athlete| %>
-    <tr>
-      <th>
-        <%= athlete.name %>
-      </th>
-
-      <% Race.order(:name).each do |race| %>
-        <td>________:___</td>
-      <% end %>
-
-    </tr>
-  <% end %>
-
+  
+  <% Athlete.order(:id).each do |a| %>
+  <tr>
+    <td> <%=a.name%> </td>
+    <td> _____:__</td>
+    <td> _____:__</td>
+    <td> _____:__</td>
+  </tr>
+  <%end%>
 </table>

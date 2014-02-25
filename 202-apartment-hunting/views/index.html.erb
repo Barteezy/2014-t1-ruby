@@ -1,21 +1,20 @@
-<h1>Apartments</h1>
+<h1> Apartments </h1>
 
-<!-- TODO: fill in this part -->
-<table border="1" class=table>
+<table border="1">
   <tr>
-    <th>address</th>
-    <th>rent_per_month</th>
-    <th>num_bedrooms</th>
-    <th>does_allow_pets</th>
-    <th>url</th>
+  <td><b>Address</b></td>
+  <td><b>Rent</b></td>
+  <td><b>Allows Pets?</b></td>
+  <td><b>Link</b><td>
   </tr>
-  <% Apartment.order(:id).each do |apartment| %>
-    <tr>
-      <td><%= apartment.address %></td>
-      <td><%= apartment.rent_per_month %></td>
-      <td><%= apartment.num_bedrooms %></td>
-      <td><%= apartment.does_allow_pets %></td>
-      <td><%= apartment.url %><td>
-    </tr>
-  <% end %>
+  <% @apartments.each do |a| %>
+  <tr>
+  <td><%=a.address%></td>
+  <td><%=a.rent%></td>
+  <td><%=a.allows_pets%></td>
+  <td><%=a.link%></td>
+
+  </tr>
+    <%end%>
+    
 </table>

@@ -5,9 +5,7 @@ get "/" do
 end
 
 get "/elements/:id" do
-  id = params["id"]
+  id = params[:id]
   @element = Element.find(id)
   halt erb(:show)
 end
-
-# TODO: write handler for detail page route

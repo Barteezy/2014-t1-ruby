@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130726031459) do
+ActiveRecord::Schema.define(version: 20140225060233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "world_cities", force: true do |t|
-    t.string  "name"
-    t.string  "country"
-    t.string  "country_flag_filename"
-    t.integer "time_zone_offset"
-    t.integer "population_in_millions"
-    t.string  "official_url"
-    t.string  "nickname"
-    t.string  "river"
+    t.string "name"
+    t.string "country"
+    t.string "country_flag_filename"
+    t.string "time_zone_offset"
+    t.string "population_in_millions"
+    t.string "official_url"
+    t.string "nickname"
+    t.string "river"
   end
 
 end

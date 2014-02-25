@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140213044221) do
+ActiveRecord::Schema.define(version: 20140224002039) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "readings", force: true do |t|
-    t.string "id_number"
     t.string "name"
     t.string "systolic"
     t.string "diastolic"

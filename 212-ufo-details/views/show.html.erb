@@ -1,21 +1,9 @@
-<a href='/'>Back to all sightings</a>
+<a href="/">Back to all sightings</a>
+<br>
 
-<h1>Sighting details<h1>
+<br>
 
-<h2>
-  <b>When: </b>
-   <%=@sighting.when_seen%>
-</h2>
+<h2><%=@sighting.date%>,<%=@sighting.location%></h2>
+<br>
+<p><%=@sighting.description%></p>
 
-<h2>
-  <b>Where: </b>
-   <%=@sighting.location%>
-</h2>
-
-<h2>
-  <b>Description: </b>
-   <%=@sighting.description%>
-</h2>
-
-
-  

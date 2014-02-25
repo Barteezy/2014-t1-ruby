@@ -1,3 +1,20 @@
 <h1>Page 4 of 4: Review</h1>
 
-<!-- TODO: write this part to match the mockup -->
+<h2> Name </h2>
+  <%=@customer.first_name%> <%=@customer.last_name%>
+<br>
+  <h2>Shipping speed</h2>
+    <%=@customer.ship_speed%>
+<br>
+  <h2>Shipping address</h2>
+    <%=@customer.ship_address1%><br>
+    <%=@customer.ship_city%>, <%=@customer.ship_state%><br>
+    <%=@customer.ship_zip_code%>
+<br>
+  <h2>Billing address</h2>
+    <%=@customer.bill_address1%><br>
+    <%=@customer.bill_city%>, <%=@customer.ship_state%><br>
+    <%=@customer.bill_zip_code%>
+<br>
+<br>
+<%=submit_tag "Purchase Now"%> or <%=submit_tag "Go Back"%>

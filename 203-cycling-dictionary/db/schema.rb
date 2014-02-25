@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140210191832) do
+ActiveRecord::Schema.define(version: 20140223224023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "definitions", force: true do |t|
     t.string "word"
-    t.string "definition"
     t.string "part_of_speech"
+    t.string "meaning"
   end
 
 end

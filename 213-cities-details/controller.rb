@@ -1,13 +1,11 @@
 require './davinci-sinatra.rb'
 
 get "/" do
-  halt erb(:index)
+ halt erb(:index)
 end
 
-get "/cities/:id" do
-  id = params["id"]
-  @city = WorldCity.find(id)
+get "/world_cities/:id" do
+  id = params[:id]
+  @world_city = WorldCity.find(id)
   halt erb(:show)
 end
-
-# TODO: write handler for detail pages route

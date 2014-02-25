@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016010516) do
+ActiveRecord::Schema.define(version: 20140225045732) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "ufo_sightings", force: true do |t|
+  create_table "sightings", force: true do |t|
+    t.string "date"
     t.string "location"
-    t.date   "when_seen"
     t.string "description"
   end
 

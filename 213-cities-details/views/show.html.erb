@@ -1,42 +1,13 @@
-<h1>
-  <%= @city.name %>
-  "<i><%= @city.nickname %></i>"
-</h1>
+<h1> <%=@world_city.name%>, "<%=@world_city.nickname%>" </h2>
 
-<div class='row'>
-  <div class='col-md-4'>
-    <b>Country</b>
-    <br>
-    <img src="/images/<%= @city.country_flag_filename %>">
-    <%= @city.country %>
-  </div>
-  
-  <div class='col-md-4'>
-    <b>Time zone</b>
-    <br>
-    UTC+0<%= @city.time_zone_offset %>00
-  </div>
-  
-  <div class='col-md-4'>
-    <b>Population</b>
-    <br>
-    <%= @city.population_in_millions %> million
-  </div>
-</div>
-<br>
+<h2> <%=@world_city.country%> </h2>
+<img src="/images/<%=@world_city.country_flag_filename%>">
 
-<div class='row'>
-  <div class='col-md-8'>
-    <b>Official URL</b>
-    <br>
-    <a href="<%= @city.official_url %>">
-      <%= @city.official_url %>
-    </a>
-  </div>
+<h2> Time Zone </h2>
+<h2> UTC +0<%=@world_city.time_zone_offset%>00</h2>
 
-  <div class='col-md-4'>
-    <b>River</b>
-    <br>
-    <%= @city.river %>
-  </div>
-</div>
+<h2> Official URL </h2>
+<a href="<%=@world_city.official_url%>"><%=@world_city.official_url%></a>
+
+<h2> River </h2>
+<h2> <%=@world_city.river%> </h2>

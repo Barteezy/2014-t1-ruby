@@ -2,8 +2,8 @@ WorldCity.create! \
   name: "London",
   country: "United Kingdom",
   country_flag_filename: "uk.png",
-  time_zone_offset: 0,
-  population_in_millions: 8,
+  time_zone_offset: "0",
+  population_in_millions: "8",
   official_url: "http://www.london.gov.uk/",
   nickname: "The Smoke",
   river: "River Thames"
@@ -27,4 +27,3 @@ WorldCity.create! \
   official_url: "http://www.shanghai.gov.cn/",
   nickname: "Pearl of the Orient",
   river: "The Yangtze River"
-

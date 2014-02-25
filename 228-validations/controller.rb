@@ -14,6 +14,6 @@ post "/new_user" do
   user.email      = params["email"]
   user.first_name = params["first_name"]
   user.age        = params["age"]
-  user.save!
+  user.save
   redirect "/"
 end
