@@ -4,5 +4,7 @@
   <% @members.each do |member| %>
     <li><%= member.name %></li>
   <% end %>
+  <li>Add a new team member <%=text_field_tag "member"%> <%=submit_tag "add"%></li>
 
 </ul>
+

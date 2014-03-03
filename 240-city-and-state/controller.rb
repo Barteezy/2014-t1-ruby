@@ -5,8 +5,11 @@ get "/" do
   halt erb(:index)
 end
 
-get "/cities/:id" do
-  id    = params["id"]
-  @city = City.find(id)
+get "/cities/:name" do
+  city = params[:name]
+  @city = City.find_by(name: city)
   halt erb(:show)
 end
+
+
+  

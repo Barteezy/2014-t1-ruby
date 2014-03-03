@@ -1,11 +1,16 @@
 <h1>Encyclopedia entries</h1>
+<h2>Click on the bird you would like to learn about</h>
+<br>
+<br>
+<br>
+
 
 <ul>
-  <% @entries.each do |entry| %>
-    <li>
-      <a href="/<%= entry.word %>">
-        <%= entry.word %>
-      </a>
-    </li>
-  <% end %>
+  <% EncyclopediaEntry.order(:word).each do |n| %>
+   <li><a href="/<%=n.word%>"><%=n.word%></li>
 </ul>
+
+<%end%>
+
+
+  

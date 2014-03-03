@@ -1,1 +1,23 @@
-<!-- TODO: write view to match the mockup -->
+<%= @header %>
+
+<table class="table">
+
+<tr>
+  <th> Title </th>
+  <th> Author </th>
+  <th> Published </th>
+</tr>
+
+<tr>
+<% @books.each do |book| %>
+  <td> <%=book.title%> </td>
+  <td> <%=book.author%> </td>
+  <td> <%=book.publication_year%> </td>
+
+</tr>
+<%end%>
+
+</table>
+
+
+
