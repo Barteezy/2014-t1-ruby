@@ -25,3 +25,9 @@ get "/year/:year" do
   halt erb(:search_results)
 end
 
+get "/book_details/:isbn" do
+  isbn = params[:isbn]
+  @book = Book.find_by(isbn: isbn)
+  halt erb(:show)
+end
+  
